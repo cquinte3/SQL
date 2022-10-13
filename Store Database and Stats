@@ -1,0 +1,22 @@
+--Create a store database
+
+CREATE TABLE istore (id INTEGER, earphone_name TEXT, waterproof TEXT, noice_canceling TEXT, cost INTEGER, color TEXT);
+
+INSERT INTO istore VALUES(1, "bose QC", "no", "yes", 249.99, "Black");
+INSERT INTO istore VALUES(2, "bose SE", "yes", "no", 199.99, "black");
+INSERT INTO istore VALUES(3, "beats pro", "yes", "yes", 279.99, "Black/White"); 
+INSERT INTO istore VALUES(4, "beats buds",  "yes", "no", 179.99, "Red/White"); 
+INSERT INTO istore VALUES(5, "beats flex", "no", "no", 79.99, "black/yellow");
+INSERT INTO istore VALUES(6, "airpods pro", "yes", "yes", 299.99, "white");
+INSERT INTO istore VALUES(7, "urbanista", "no", "no", 64.99, "black");   
+INSERT INTO istore VALUES(8, "skullcandy", "yes", "yes", 49.99, "black/gray"); 
+INSERT INTO istore VALUES(9, "skullcandy", "yes", "no", 64.99, "black");
+INSERT INTO istore VALUES(10, "JBL Tune", "yes", "no", 119.99, "blue"); 
+INSERT INTO istore VALUES(11, "JBL Tune 13", "yes", "yes", 109.99, "black");
+INSERT INTO istore VALUES(12, "JBL END", "yes", "no", 119.99, "black/blue");
+INSERT INTO istore VALUES(13, "Sony Link","no", "yes", 209.99, "black");
+INSERT INTO istore VALUES(14, "Sony Wp", "yes", "no", 112.99, "navy blue"); 
+INSERT INTO istore VALUES(15, "Sony WI", "yes", "no", 99.99, "blue"); 
+
+SELECT * FROM istore ORDER BY cost;
+SELECT SUM(cost) from istore;
