@@ -18,5 +18,9 @@ INSERT INTO istore VALUES(13, "Sony Link","no", "yes", 209.99, "black");
 INSERT INTO istore VALUES(14, "Sony Wp", "yes", "no", 112.99, "navy blue"); 
 INSERT INTO istore VALUES(15, "Sony WI", "yes", "no", 99.99, "blue"); 
 
+--Display the database ordered by cost. 
 SELECT * FROM istore ORDER BY cost;
+
+--What is the total cost of all items in Istore? 
 SELECT SUM(cost) from istore;
+
